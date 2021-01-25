@@ -1,47 +1,228 @@
-.landingpage {
-    background-image: url("images/pizzahomepage.jpg");
-    background-size: cover;
-    height: 600px
+h2 {
+    font-family: 'Josefin Slab', serif;
+    color: rgb(95, 51, 33);
+    font-size: 60px;
 }
 
-.pizzeria {
-    padding-top: 40px;
-    font-family: 'Courgette', cursive;
+span {
+    color: rgb(186, 218, 136);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: rgb(187, 157, 146);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: rgb(189, 131, 111);
+    text-decoration: none;
+}
+
+.nav {
+    border: 3px 3px transparent;
+    box-shadow: 5px 5px 10px rgb(139, 182, 180);
+    position: relative;
+}
+
+
+/* the landing page */
+
+h1 {
+    font-family: 'Josefin Slab', serif;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(129, 75, 36);
+    text-shadow: 3px 3px 5px black;
+}
+
+.home {
+    background-image: url("assets/pizzahomepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 350px;
+}
+
+
+/* about The pizzas*/
+
+#about {
+    text-align: center;
+}
+
+p {
+    color: rgb(100, 50, 14);
+}
+
+#img1 {
+    margin-right: 3%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+#img1:hover {
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+#img1 img {
+    border-radius: 10px;
+}
+
+#img1 img:hover {
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+}
+
+.row {
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row div {
+    width: 450px;
+}
+
+#about-us {
+    padding: 2%;
+}
+
+
+/* menu */
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.small {
+    padding-right: 20px;
+    margin-right: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: lavender;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.img2,
+.img3,
+.img4 {
+    margin-right: 3%;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+.img2:hover {
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+.img2 img {
+    border-radius: 10px;
+}
+
+.img2:hover {
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+}
+
+.img3:hover {
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+.img3 img {
+    border-radius: 10px;
+}
+
+.img3:hover {
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+}
+
+.img4:hover {
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+.img4 img {
+    border-radius: 10px;
+}
+
+.img4:hover {
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+}
+
+
+/* Form */
+
+.submit {
+    color: rgb(26, 13, 9);
     font-size: 40px;
 }
 
-.menu {
-    padding-top: 15px;
+button {
+    color: rgb(119, 103, 49);
 }
 
-.size {
-    height: 200px;
-    width: 300px;
-}
-
-.two {
-    margin-top: 30px;
-}
-
-.overlay {
-    /* display: none */
-}
-
-
-/* .overlay1{
-    display:none;
-    position: absolute;
-    bottom:0px;
-    background:white;
-    opacity: 0.5;
-    width: 90%;
-    height: 100%;
-} */
-
-.aboutus {
-    padding: 100px;
-}
-
-.footer {
-    padding-top: 70px;
+button:hover {
+    color: rgb(73, 95, 69);
 }

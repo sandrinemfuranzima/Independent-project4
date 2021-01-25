@@ -15,114 +15,171 @@
 </head>
 
 <body>
-    <div class="main container">
-        <div class="landingpage">
-            <p class="the pizzas text-white text-bold text-center">THE PIZZAS</p>
-        </div>
-        <div class="menu">
-            <h3 class="menu text-center">Our full range of menu</h3>
-            <div class="row">
-                <div class="col-md-6 mt-4">
-                    <div>
-                        <img class="card-img-top one" src="images/mypizza4.jpg" Width="250" height="200">
-                    </div>
-                    <div class="overlay1">
-                        <h5 class="text-bold">Pizza Veg Extravaganza</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div>
-                        <img class="card-img-top" src="images/mypizza2.jpg" Width="250" height="200">
-                    </div>
-                    <div class="overlay">
-                        <h5 class="text-bold">Pizza Neapolitan Cheese</h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 mt-4">
-                    <div>
-                        <img class="card-img-top" src="images/mypizza3.jpg" Width="250" height="200">
-                    </div>
-                    <div class="overlay">
-                        <h5 class="text-bold">Pizza Mexican Green Wave</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 mt-4">
-                    <div>
-                        <img class="card-img-top" src="images/mypizza6.jpg" Width="250" height="200">
-                    </div>
-                    <div class="overlay">
-                        <h5 class="text-bold">Pizza Margherita extra</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="order row">
-            <div class="col-md-6">
-                <h3>Enter your order details below <br> Fill in the form </h3>
-                <form action="" id="pizzainfo">
-                    <label for="">Choose your pizza size</label>
-                    <select class="form-control" name="size" id="size">
-                        <option value="1200">Large 12000 rwf</option>
-                        <option value="900">Medium 9000 rwf</option>
-                        <option value="600">Small  6000 rwf</option>
-                    </select>
-                    <label for="">Choose your desired crust type</label>
-                    <select class="form-control" name="" id="crust">
-                        <option value="230" name="crust">stuffed crust 2300rwf
-                        <option value="250" name="crust">Crispy 2500 rwf
-                        <option value="300" name="crust">Glutten free 3000 rwf
-                    </select>
-                    <label for="">Choose your Desired toppings</label> <br>
-                    <input value="150" type="checkbox" id="toppingone">Mushrooms
-                    <input value="150" type="checkbox" id="toppingone">Sausage
-                    <input value="150" type="checkbox" id="toppingone">Onions
-                    <input value="150" type="checkbox" id="toppingone">Tikka Sauce
-                    <input value="150" type="checkbox" id="toppingone">Mozarella Cheese
-
-                    <label for="">Input Quantity</label>
-                    <input class="form-control form-group" type="text" id="numberofpizza">
-                    <button name="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Submit</button>
-                </form>
-            </div>
-
-            <div class="col-md-6">
-                <div id="formlocation">
-                    <h3>For delivery services,enter your location details below</h3>
-                    <form id="delivery">
-                        <label for="name">Name</label>
-                        <input class="form-control" type="text" name="" id="name" required="required">
-                        <label for="location">Location</label>
-                        <input class="form-control" type="text" id="location" placeholder="location...">
-                        <label for="phonenumber">Phone Number</label>
-                        <input class="form-control" type="tel" placeholder="07xxxxxxxx" id="number"> <br>
-                        <button type="submit" name="button" id="submit">submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid footer row">
-            <div class="col-md-6 Get in touch">
-                <h4>Get in touch</h4>
-                <p><i class="fa fa-map-marker fa-2x">&nbsp;Kigali city market,first floor</i></p>
-                <p><i class="fa fa-phone">&nbsp;078452375,0736787652</i></p>
-                <p><i class="fa fa-email">&nbsp;info@ThePizzas.com</i></p>
-            </div>
-            <div class="col-md-6 social icons">
-                <div id="contacts" class="small-divs">
-                    <h4></h4>
-                    <p>Lets catch up</p>
-                    <p><i class="fa fa-facebook-square">&nbsp;The pizzas</i></p>
-                    <p><i class="fa fa-instagram">&nbsp;The pizzas</i></p>
-                    <p><i class="fa fa-youtube ">&nbsp;The pizzas</i></p>
-                    <p><i class="fa fa-twitter ">&nbsp;The pizzas</i></p>
-                </div>
-            </div>
+    <div class="nav">
+        <h2><strong>THE PIZZAS</strong></h2>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#aboutus">About us</a>
+                    </li>
+                    <li>
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li>
+                        <a href="#orders">Orders</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
+    <div class="home">
+        <h1><strong>Welcome To the pizzas!!</strong></h1>
+    </div>
+    <div class="menu">
+        <h3 class="menu text-center">Our full range of menu</h3>
+        <h1>Menu</h1>
+        <div id="menu">
+            <div class="small">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://bit.ly/38E9ny6" width="400px" height="250px"><br><br>
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Small Size pizza</h2>
+                            <p>Small 6000 rwf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="medium">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="https://bit.ly/2PLJTWS" width="400px" height="250px"><br><br>
+                        </div>
+                        <div class=" flip-card-back ">
+                            <h2>Medium Size pizza</h2>
+                            <p>Medium 9000 rwf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="large ">
+                <div class="flip-card ">
+                    <div class="flip-card-inner ">
+                        <div class="flip-card-front ">
+                            <img src="https://bit.ly/35qu7al " width="400px" height="250px">
+                        </div>
+                        <div class="flip-card-back ">
+                            <h2>Large Size pizza</h2>
+                            <p>Large 12000 rwf</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--for the about us-->
+            <div class="container ">
+                <h2>About us</h2>
+                <div class="row ">
+                    <div id="img1 " class="text-center ">
+                        <img src="https://www.giuseppispizza.com/wp-content/uploads/2018/08/Giuseppis-Pizza-Hilton-Head.jpg " width="500px " height="400px>
+                        </div>
+                        <div id=" about-us " class="text-center ">
+                            <p><b>Thankyou for choosing us <span>The Pizzas</span></b></p>
+                            <p></p>
+                            <div id="aboutus ">
+                                <p>The Pizzas has created a menu featuring local ingredients, precisely cooked and brought together on the plate to create a lasting impression so you keep coming back for more.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="type ">
+                        <br><br><br><br><br><br><br>
+                        <h1>Types of Pizza</h1>
+                        <h2>Crispy</h2>
+                        <div class="img2 ">
+                            <img src="https://bit.ly/2qXR0mE " width="500px " height="400px ">
+                        </div>
+                        <h2>Stuffed Pizza</h2>
+                        <div class="img3 ">
+                            <img src="https://bit.ly/34p9Vo1 ">
+                        </div>
+                        <h2>Gluten-free Pizza</h2>
+                        <div class="img4 ">
+                            <img src="https://bit.ly/2qSk0fq " width="500px ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order row ">
+                <div class="col-md-6 ">
+                    <h3>Enter your order details below please<br> Fill in the form </h3>
+                    <form action=" " id="pizzainfo ">
+                        <label for=" ">Choose your pizza size</label>
+                        <select class="form-control " name="size " id="size ">
+                        <option value="1200 ">Large 12000 rwf</option>
+                        <option value="900 ">Medium 9000 rwf</option>
+                        <option value="600 ">Small  6000 rwf</option>
+                    </select>
+                        <label for=" ">Choose your desired crust type</label>
+                        <select class="form-control " name=" " id="crust ">
+                        <option value="230 " name="crust ">stuffed crust 2300rwf
+                        <option value="250 " name="crust ">Crispy 2500 rwf
+                        <option value="300 " name="crust ">Glutten free 3000 rwf
+                    </select>
+                     <br>
+                        <label for=" ">Choose your Desired toppings</label> <br>
+                        <input value="150 " type="checkbox" id="topping1">Mushrooms
+                        <input value="150 " type="checkbox" id="topping2">Sausage
+                        <input value="150 " type="checkbox" id="topping3">Onions
+                        <input value="150 " type="checkbox" id="topping4 ">Tikka Sauce
+                        <input value="150 " type="checkbox" id="topping5 ">Mozarella Cheese
+
+                        <label for=" ">Input Quantity</label>
+                        <input class="form-control form-group " type="text " id="numberofpizza ">
+                        <button name="button " type="submit " id="submit " value="Check-Out " onclick="calctotalPrice() ">Submit</button>
+                    </form>
+                </div>
+
+                <div class="col-md-6 ">
+                    <div id="formlocation ">
+                        <h3>For delivery services,enter your location details below</h3>
+                        <form id="delivery ">
+                            <label for="name ">Name</label>
+                            <input class="form-control " type="text " name=" " id="name " required="required ">
+                            <label for="location ">Location</label>
+                            <input class="form-control " type="text " id="location " placeholder="location... ">
+                            <label for="phonenumber ">Phone Number</label>
+                            <input class="form-control " type="tel " placeholder="07xxxxxxxx " id="number "> <br>
+                            <button type="submit " name="button " id="submit ">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid footer row ">
+                <div class="col-md-6 Get in touch ">
+                    <h4>Get in touch</h4>
+                      <div class="card-footer" id="contacts">
+                        <h4>Contacts</h4>
+                    <p><i class="fa fa-map-marker fa-2x ">&nbsp;Kigali city market,first floor</i></p>
+                    <p><i class="fa fa-phone ">&nbsp;078452375,0736787652</i></p> <a href="https://www.facebook.com " target="_blank "><i class="fa fa-facebook "></i></a>
+                        <a href="https://twitter.com " target="_blank "><i class="fa fa-twitter "></i></a>
+                        <a href="https://www.instagram.com " target="_blank "><i class="fa fa-instagram "></i></a>
+                        <a href="https://www.pinterest.com " target="_blank "><i class="fa fa-pinterest "></i></a>
+                    <p><i class="fa fa-email ">&nbsp;info@ThePizzas.com</i></p>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

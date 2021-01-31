@@ -51,7 +51,7 @@ h1 {
 }
 
 .home {
-    background-image: url("assets/pizzahomepage.jpg");
+    background-image: url("pizzahomepage.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 350px;

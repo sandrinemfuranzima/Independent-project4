@@ -6,11 +6,11 @@ This is an application that will enable a user to make a pizza order online.Cust
 ## Installation Instructions:
 
 ## Installation/Setup instruction:
-*Download a zip file of the project.
-*Extract the files
-*Open index.html in a browser
+* Download a zip file of the project.
+* Extract the files
+* Open index.html in a browser
 
 ## Technologies Used:
-*Javascript
-*HTML5
-*css
+* Javascript
+* HTML5
+* css

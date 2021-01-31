@@ -76,24 +76,16 @@ function calctotalPrice(e) {
 // var number = $("input#number").val();
 //var location = $("input#location").val();
 
-$(document).ready(function () {
-  $("$delivery").submit(function() {
+
+    // alert("Hello" + name +". Your order has been successfuly received and will be delivered to" + location + "within one hour.The delivery will cost 500 rwf/= \nThank you for chosing The pizzas.");
+   
+
+$(document).ready(function() {
+  $("#delivery").submit(function() {
       var name = $("input#name").val();
       var number = $("input#number").val();
       var location = $("input#location").val();
       console.log("submit");
-      alert('Please wait while form is submitting');
+      alert("Hello" + name +". Your order has been successfuly received and will be delivered to" + location + "within one hour.The delivery will cost 500 rwf/= \nThank you for chosing The pizzas.");
   })
-  
-  
-
-    // alert("Hello" + name +". Your order has been successfuly received and will be delivered to" + location + "within one hour.The delivery will cost 500 rwf/= \nThank you for chosing The pizzas.");
-   
-  
-    // $(this).get(0).reset();
-    //  event.preventDefault();
-  });
-
-  
-
-});
+})
